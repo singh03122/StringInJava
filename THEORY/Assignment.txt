@@ -1,0 +1,56 @@
+Q1.What is Mutable String in Java Explain with an example ?
+
+Ans:- a mutable string refers to a string object whose value can be changed (mutated) after it has been created. The most common class used to represent a mutable string in Java is the StringBuilder class. Unlike the String class, which is immutable (i.e., once a String object is created, its content cannot be changed), StringBuilder allows you to modify the content without creating new objects.
+
+Why is StringBuilder Mutable?
+The StringBuilder class allows you to perform operations such as append, insert, replace, delete, and reverse on a string without creating a new string object every time you make a change. This makes StringBuilder more memory and performance efficient for scenarios where strings undergo frequent modifications.
+
+Example of StringBuilder (Mutable String)
+Here is an example demonstrating the mutability of StringBuilder in Java:
+public class MutableStringExample {
+    public static void main(String[] args) {
+        // Create a mutable string using StringBuilder
+        StringBuilder mutableStr = new StringBuilder("Hello");
+
+        // Print original string
+        System.out.println("Original String: " + mutableStr);
+
+        // Append more text to the string
+        mutableStr.append(" World");
+
+        // Print the modified string
+        System.out.println("After append: " + mutableStr);
+
+        // Insert text at a specific position
+        mutableStr.insert(5, " Java");
+
+        // Print the modified string
+        System.out.println("After insert: " + mutableStr);
+
+        // Replace part of the string
+        mutableStr.replace(6, 10, "Program");
+
+        // Print the modified string
+        System.out.println("After replace: " + mutableStr);
+
+        // Delete a part of the string
+        mutableStr.delete(6, 14);
+
+        // Print the modified string
+        System.out.println("After delete: " + mutableStr);
+
+        // Reverse the string
+        mutableStr.reverse();
+
+        // Print the reversed string
+        System.out.println("After reverse: " + mutableStr);
+
+
+    }
+}
+
+Q2.HE WAP to reverse a String
+“PWSKILLS”
+“SLLIKSPW”
+
+Ans:-  Please visit for codding area...
